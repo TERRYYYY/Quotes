@@ -1,0 +1,47 @@
+/* #quote-form{
+     box-shadow: 3px 5px 20px grey;
+     margin-right: 500px;
+     width: 500px;
+
+} */
+
+
+.container-fluid{
+    font-size: 25px;
+    font-family: 'Courgette';
+    margin-top: 20px;
+}
+.text-center{
+    font-family: 'Courgette';
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+
+.form-group{
+    width: 450px;
+    height: 100px;
+
+}
+.form-control{
+    height: 40px;
+    font-size: 18px;
+    
+}
+#description{
+    height: 90px;
+}
+#author{
+    margin-top: 20px;
+}
+.display{
+    font-size: 18px;
+}
+#submit-quote-button{
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+}

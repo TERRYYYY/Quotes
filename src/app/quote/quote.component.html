@@ -1,0 +1,128 @@
+
+    <!-- <header>
+    <a href="#" class="logo">K Quotes</a>
+    <nav>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li><a href="#">My Quotes</a></li>
+        </ul>
+        
+    </nav>
+
+    </header> -->
+   
+    <!-- <div class="open-page">
+        <button type="submit" id="add-quote-button" class="btn btn-dark btn-lg" (click)= "openDialog()">Add Quote</button>
+    </div> -->
+
+    <div class="welcome">
+        <h4>Welcome to Quote App</h4>
+        <h6>Do you feel creative and want to share your quotes to the whole world?</h6>
+        <!-- <button type="submit"  class="btn btn-outline-info">Add your Quote Now</button> -->
+        <!-- <h5 class="add-quote">Add your Quote Now</h5> -->
+    
+    </div>
+<!-- <div id="intro">
+    <img class="background" [src]=myimage>
+    <p style="color: white; font-size: 100px;">Hello</p> -->
+
+    <div class="container">
+        <!-- <div appHighestVotes class="card-body">
+                <p>Congratulations!Your quote has {{bestQuote().upVote}} quotes.</p>
+                </div> -->
+        
+        <h2 class="quote-title">How it works </h2>
+    <div class="row">
+        <div class="how-it-works"> 
+        <div class="col-md-4 mb-3">
+            
+        <div class="card">
+            <div class="instructions"> 
+            <div class="card-title">
+               
+                <h1>1</h1>
+                <h3 class="first-step">Enter a quote</h3>
+            </div>
+            <div class="card-body">
+                <p>First step you will enter a quote that inspires you and you would like to share to other people.</p>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            
+        <div class="card">
+            <div class="instructions"> 
+            <div class="card-title">
+                <h1>2</h1>
+                <h3 class="second-step">Display of your quote </h3>
+            </div>
+            <div class="card-body">
+                <p>If you enter the details correctly, our application will post your quote and its details.</p>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            
+            <div class="card">
+                <div class="instructions">
+                <div class="card-title">
+                    
+                    <h1>3</h1>
+                    <h3 class="third-step">Enter another quote</h3>
+                </div>
+                <div class="card-body">
+                    <p>Before entering other details, first refresh your browser then enter your other quote for it to be displayed.</p>
+                </div>
+                 
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-6">
+            
+            
+            <app-quote-form  (showForm)='hideForm()' (addQuote)="addNewQuote($event)"> </app-quote-form>
+            
+        </div> 
+        <div class="col-md-6">
+            <h2>Available Quotes</h2>
+            
+        <div *ngFor='let quote of quotes;let i = index'>
+            
+            <div class="col-md-6" > 
+                <div class="card mt-10"> 
+                    <div class="card-title">
+                <h3 id={{i}} class="postedby"> Posted by {{quote.name}} on {{quote.completeDate|date}}</h3>
+                    
+            
+            <!-- </div> -->
+            <!-- <div class="col-md-4"> -->
+                <div class="card-text">
+           <button (click) = 'toggleDetails(i)' id="check-quote" class="btn btn-outline-info" >Check Quote</button>
+                </div>
+            </div>
+                </div>
+            </div>
+            
+
+
+        <div *ngIf ='quote.showDescription' > 
+            <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'(isHighest)='highestVotes()' ></app-quote-detail>
+        </div>
+            
+        </div>
+            
+        </div>
+    </div> 
+    
+    <!-- <p *ngIf='quotes.length > 5'>Your quotes are too many</p> -->
+</div> 
+
+
+
