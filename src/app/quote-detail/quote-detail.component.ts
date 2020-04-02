@@ -12,8 +12,8 @@ export class QuoteDetailComponent implements OnInit {
     new Quote(2, 'Hudson', 'Wisely, and slow. They stumble that run fast.', 'William Shakespeare', new Date(1890, 8, 9), 0, 0),
   ];
 
-  likeCounter: number = 0;
-  dislikeCounter: number =0;
+  // likeCounter: number = 0;
+  // dislikeCounter: number =0;
   upVote : number =0;
   downVote : number = 0;
 
@@ -30,14 +30,16 @@ export class QuoteDetailComponent implements OnInit {
   }
 
 
+  likeCounter: number = 0;
+  dislikeCounter: number = 0;
 
   countLike() {
     this.likeCounter += 1;
-    this.quote.upVote +=1;
+    // this.quote.upVote +=1;
   }
   countDislike(){
     this.dislikeCounter +=1;
-    this.quote.downVote +=1;
+    // this.quote.downVote +=1;
   }
   
 
