@@ -1,6 +1,3 @@
-/* .thumbs-up{
-    margin-left: 2px;
-} */
 #quote-detail{
     font-family: 'Courgette';
 
@@ -15,8 +12,7 @@ h3{
     text-align: center;
     font-family: 'Courgette';
     font-size: 18px;
-    /* width: 200px;
-    height: 300px; */
+    
 }
 #trash{
     margin-left: 5px;
