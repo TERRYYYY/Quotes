@@ -28,15 +28,15 @@ export class QuoteComponent implements OnInit {
   }
 
 
-  // deleteQuote(isComplete, index) {
-  //   if (isComplete) {
-  //     let toDelete = confirm(`Are you sure you want to delete Quote by: ${this.quotes[index].author}?`)
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete Quote by: ${this.quotes[index].author}?`)
 
-  //     if (toDelete) {
-  //       this.quotes.splice(index, 1)
-  //     }
-  //   }
-  // }
+      if (toDelete) {
+        this.quotes.splice(index, 1)
+      }
+    }
+  }
 
   // addNewQuote(quote) {
   //   let quoteLength = this.quotes.length;

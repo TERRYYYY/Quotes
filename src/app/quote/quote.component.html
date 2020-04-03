@@ -88,8 +88,7 @@
 
 
         <div *ngIf ='quote.showDescription' > 
-            <app-quote-detail [quote]='quote'  ></app-quote-detail>
-            <!-- <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail> -->
+           <app-quote-detail [quote] = 'quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
         </div>
             
         </div>
