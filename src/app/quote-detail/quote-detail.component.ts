@@ -40,19 +40,19 @@ export class QuoteDetailComponent implements OnInit {
     this.quote.downVote +=1;
   }  
 
-  // bestQuote() {
+  bestQuote() {
     
-  //   let upVoteArr: number[] = [];
-  //   for (let i of this.quotes) {
-  //     upVoteArr.push(i.upVote);
-  //   }
+    let upVoteArr: number[] = [];
+    for (let i of this.quotes) {
+      upVoteArr.push(i.upVote);
+    }
 
-  //   let maxVote = Math.max(...upVoteArr);
-  //   let highestVotedQuote = this.quotes.find(quote => quote.upVote == maxVote)
-  //   return highestVotedQuote;
+    let maxVote = Math.max(...upVoteArr);
+    let highestVotedQuote = this.quotes.find(quote => quote.upVote == maxVote)
+    return highestVotedQuote;
 
     
-  // }
+  }
 
   
   
