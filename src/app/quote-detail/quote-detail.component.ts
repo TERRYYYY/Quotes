@@ -12,8 +12,6 @@ export class QuoteDetailComponent implements OnInit {
     new Quote(2, 'Hudson', 'Wisely, and slow. They stumble that run fast.', 'William Shakespeare', new Date(1890, 8, 9), 0, 0),
   ];
 
-  // likeCounter: number = 0;
-  // dislikeCounter: number =0;
   upVote : number =0;
   downVote : number = 0;
 
@@ -30,32 +28,31 @@ export class QuoteDetailComponent implements OnInit {
   }
 
 
-  likeCounter: number = 0;
-  dislikeCounter: number = 0;
+  likeCounter : number = 0;
+  dislikeCounter : number = 0;
 
-  countLike() {
-    this.likeCounter += 1;
-    // this.quote.upVote +=1;
+  countLike(){
+    this.likeCounter +=1;
+    this.quote.upVote +=1;
   }
   countDislike(){
     this.dislikeCounter +=1;
-    // this.quote.downVote +=1;
-  }
-  
+    this.quote.downVote +=1;
+  }  
 
-  bestQuote() {
+  // bestQuote() {
     
-    let upVoteArr: number[] = [];
-    for (let i of this.quotes) {
-      upVoteArr.push(i.upVote);
-    }
+  //   let upVoteArr: number[] = [];
+  //   for (let i of this.quotes) {
+  //     upVoteArr.push(i.upVote);
+  //   }
 
-    let maxVote = Math.max(...upVoteArr);
-    let highestVotedQuote = this.quotes.find(quote => quote.upVote == maxVote)
-    return highestVotedQuote;
+  //   let maxVote = Math.max(...upVoteArr);
+  //   let highestVotedQuote = this.quotes.find(quote => quote.upVote == maxVote)
+  //   return highestVotedQuote;
 
     
-  }
+  // }
 
   
   
