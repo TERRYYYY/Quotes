@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit {
   myDate = Date.now( );
   quotes: Quote[] = [
     new Quote(1, 'Terry', 'I have no special talent. I am only passionately curious.' ,'Albert Einstein', new Date(1864, 2, 4),0,0),
-    new Quote(2, 'Hudson', 'Wisely, and slow. They stumble that run fast.', 'William Shakespeare', new Date(1890, 8, 9),0,0),
+    new Quote(2, 'Jason', 'Stay hungry, stay foolish', 'Steve Jobs', new Date(1890, 8, 9),0,0),
     // new Quote(3, 'Lorraine', 'If you judge people, you have no time to love them.','Mother Teresa', new Date(1785, 9, 21)),
     // new Quote(4, 'Jason', 'Stay hungry, stay foolish.','Steve Jobs', new Date(2012, 10, 19)),
     // new Quote(5, 'Michiel', 'Be kind whenever possible. It is always possible.','Dalai Lama', new Date(1990, 7, 16)),
@@ -28,22 +28,22 @@ export class QuoteComponent implements OnInit {
   }
 
 
-  deleteQuote(isComplete, index) {
-    if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete Quote by: ${this.quotes[index].author}?`)
+  // deleteQuote(isComplete, index) {
+  //   if (isComplete) {
+  //     let toDelete = confirm(`Are you sure you want to delete Quote by: ${this.quotes[index].author}?`)
 
-      if (toDelete) {
-        this.quotes.splice(index, 1)
-      }
-    }
-  }
+  //     if (toDelete) {
+  //       this.quotes.splice(index, 1)
+  //     }
+  //   }
+  // }
 
-  addNewQuote(quote) {
-    let quoteLength = this.quotes.length;
-    quote.id = quoteLength + 1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quotes.push(quote)
-  }
+  // addNewQuote(quote) {
+  //   let quoteLength = this.quotes.length;
+  //   quote.id = quoteLength + 1;
+  //   quote.completeDate = new Date(quote.completeDate)
+  //   this.quotes.push(quote)
+  // }
 
   showForm:boolean = false;
 

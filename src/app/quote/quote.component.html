@@ -1,37 +1,12 @@
-
-    <!-- <header>
-    <a href="#" class="logo">K Quotes</a>
-    <nav>
-        <ul>
-            <li> <a href="#">Home</a></li>
-            <li><a href="#">My Quotes</a></li>
-        </ul>
-        
-    </nav>
-
-    </header> -->
-   
-    <!-- <div class="open-page">
-        <button type="submit" id="add-quote-button" class="btn btn-dark btn-lg" (click)= "openDialog()">Add Quote</button>
-    </div> -->
-
-    <div class="welcome">
+<div class="welcome">
         <h4>Welcome to Quote App</h4>
         <h6>Do you feel creative and want to share your quotes to the whole world?</h6>
-        <!-- <button type="submit"  class="btn btn-outline-info">Add your Quote Now</button> -->
-        <!-- <h5 class="add-quote">Add your Quote Now</h5> -->
     
     </div>
-<!-- <div id="intro">
-    <img class="background" [src]=myimage>
-    <p style="color: white; font-size: 100px;">Hello</p> -->
 
     <div class="container">
-        <!-- <div appHighestVotes class="card-body">
-                <p>Congratulations!Your quote has {{bestQuote().upVote}} quotes.</p>
-                </div> -->
         
-        <h2 class="quote-title">How it works </h2>
+        <!-- <h2 class="quote-title">How it works </h2>
     <div class="row">
         <div class="how-it-works"> 
         <div class="col-md-4 mb-3">
@@ -82,12 +57,12 @@
                  
             </div>
         </div>
-        </div>
+        </div> -->
 
         <div class="col-md-6">
             
             
-            <app-quote-form  (showForm)='hideForm()' (addQuote)="addNewQuote($event)"> </app-quote-form>
+            <!-- <app-quote-form  (showForm)='hideForm()' (addQuote)="addNewQuote($event)"> </app-quote-form> -->
             
         </div> 
         <div class="col-md-6">
@@ -113,13 +88,13 @@
 
 
         <div *ngIf ='quote.showDescription' > 
-            <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)' ></app-quote-detail>
+            <!-- <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)' ></app-quote-detail> -->
         </div>
             
         </div>
             
         </div>
-    </div> 
+     
     
     <!-- <p *ngIf='quotes.length > 5'>Your quotes are too many</p> -->
 </div> 
