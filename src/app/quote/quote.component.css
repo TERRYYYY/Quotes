@@ -2,13 +2,11 @@ body{
     margin: 0;
     font-size: 50px;
     background-color: black;
-    background-image: url(../../assets/images/pic.jpeg);
     font-family: 'Courgette';  
 }
 .card{
     margin-bottom: 15px;
     margin-top: 15px;
-    /* box-shadow: 0 2px 10px black; */
 }
 .instructions{
      box-shadow: 2px 5px 30px grey;
